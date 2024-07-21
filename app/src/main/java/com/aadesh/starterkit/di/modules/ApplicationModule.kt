@@ -7,4 +7,5 @@ import dagger.hilt.components.SingletonComponent
 @Module
 @InstallIn(SingletonComponent::class)
 object ApplicationModule {
+  // setup application related things here.
 }

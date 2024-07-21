@@ -3,10 +3,8 @@ package com.aadesh.starterkit.home
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.liveData
 import androidx.lifecycle.viewModelScope
 import com.aadesh.starterkit.model.ApiResponse
-import com.aadesh.starterkit.model.Employee
 import com.aadesh.starterkit.repository.Repository
 import com.aadesh.starterkit.retrofit.ApiResult
 import dagger.hilt.android.lifecycle.HiltViewModel
