@@ -5,7 +5,8 @@ your own Android application. By cloning this repository, you can immediately be
 your project's unique features. Here’s what this starter kit provides:
 
 ### Features
-* Project Structure: Built using the MVVM pattern, with integrated Retrofit, Room Database, and SharedPreferences.
+* Project Structure: Built using the MVVM pattern, dagger hilt(for dependencies injection), Retrofit, Glide, and SharedPreferences.
+* Strict Mode Policy: Detects issues like disk reads/writes, content URIs with improper permissions, memory leaks, SQLite leaks, and more, helping you build a smooth and efficient application.
 * Code Quality Tools: Includes Detekt, Lint, and Ktlint for maintaining high code quality. When you try to commit your code all these tools will check your code, and if any issue is found in your project the commit will fail with proper error.
 
 ### Best Practices

@@ -6,6 +6,8 @@ plugins {
   alias(libs.plugins.jetbrains.kotlin.android)
   alias(libs.plugins.detekt)
   alias(libs.plugins.ktlint)
+  alias(libs.plugins.dagger.hilt.android.plugin)
+  id("kotlin-kapt")
 }
 
 apply(from = "$rootDir/team-props/git-hooks.gradle")
@@ -32,6 +34,9 @@ android {
         "proguard-rules.pro"
       )
     }
+    debug {
+      multiDexEnabled = true
+    }
   }
   compileOptions {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -55,6 +60,7 @@ android {
   buildFeatures {
     // for using viewBinding in our project.
     viewBinding = true
+    buildConfig = true
   }
 
   lint {
@@ -91,6 +97,10 @@ ktlint {
   android.set(true)
 }
 
+kapt {
+  correctErrorTypes = true
+}
+
 dependencies {
   implementation(libs.androidx.core.ktx)
   implementation(libs.androidx.appcompat)
@@ -100,6 +110,13 @@ dependencies {
   implementation(libs.androidx.lifecycle.viewmodel.ktx)
   implementation(libs.androidx.navigation.fragment.ktx)
   implementation(libs.androidx.navigation.ui.ktx)
+  implementation(libs.multidex)
+  implementation(libs.retrofit)
+  implementation(libs.retrofit)
+  implementation(libs.retrofit.gson.convertor)
+  implementation(libs.glide)
+  implementation(libs.dagger.hilt)
+  kapt(libs.dagger.hilt.compiler)
   testImplementation(libs.junit)
   androidTestImplementation(libs.androidx.junit)
   androidTestImplementation(libs.androidx.espresso.core)

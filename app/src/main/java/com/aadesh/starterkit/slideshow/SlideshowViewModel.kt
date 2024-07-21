@@ -1,4 +1,4 @@
-package com.aadesh.starterkit.ui.slideshow
+package com.aadesh.starterkit.slideshow
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
