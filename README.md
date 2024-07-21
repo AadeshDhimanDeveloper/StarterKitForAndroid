@@ -6,7 +6,7 @@ your project's unique features. Here’s what this starter kit provides:
 
 ### Features
 * Project Structure: Built using the MVVM pattern, with integrated Retrofit, Room Database, and SharedPreferences.
-* Code Quality Tools: Includes Detekt, Lint, and Ktlint for maintaining high code quality.
+* Code Quality Tools: Includes Detekt, Lint, and Ktlint for maintaining high code quality. When you try to commit your code all these tools will check your code, and if any issue is found in your project the commit will fail with proper error.
 
 ### Best Practices
 
