@@ -13,8 +13,8 @@ class Repository @Inject constructor(private val apiService: ApiService) {
       try {
         val response = apiService.getEmployees()
         ApiResult.Success(response)
-      } catch (e: Exception) {
-        ApiResult.Error(e)
+      } catch (ignore: Exception) {
+        ApiResult.Error(ignore)
       }
     }
   }

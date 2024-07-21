@@ -19,6 +19,7 @@ import javax.inject.Inject
 class HomeFragment : Fragment() {
 
   private var _binding: FragmentHomeBinding? = null
+  @Suppress("UnsafeCallOnNullableType")
   private val binding get() = _binding!!
   private val homeViewModel: HomeViewModel by viewModels()
   private lateinit var employeeAdapter: EmployeeAdapter
