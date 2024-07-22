@@ -12,4 +12,5 @@ if [ "$status" = 0 ] ; then
 else
     ./gradlew ktlintFormat --daemon
     echo 1>&2 "Static analysis found violations and attempted to autofix, please commit these autoformat changes"
+    exit 1
 fi
